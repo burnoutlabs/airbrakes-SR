@@ -457,9 +457,11 @@ Appendix II for easier in-depth viewing.
 ![](./media/image22.png)
 ### Load Analysis & Motor Selection
 
-This method and results of this analysis section can be accessed on the
-team's GitHub
-([link](https://github.com/chasgior214/airbrakes-capstone/tree/main)).
+The method and results of this analysis are in this repository:
+[`mechanical/load_analysis.ipynb`](../mechanical/load_analysis.ipynb)
+(static load analysis) and
+[`electrical/motor_analysis/`](../electrical/motor_analysis/) (load-torque
+analysis and motor sizing).
 The force-torque analysis began with converting the mechanical geometric
 of the leadscrew push-rod mechanism into a static mechanical model.
 Figure 21 displays a stripped down and highlighted version of the
@@ -1059,7 +1061,9 @@ https://github.com/simondlevy/TwoStepFilter
 
 \[29\] "julester23/DCMotorServo: Arduino Library for controlling DC
 motors with rotary encoders." Accessed: Apr. 08, 2024. \[Online\].
-Available: https://github.com/julester23/DCMotorServo
+Available (archived copy; the original repository,
+`github.com/julester23/DCMotorServo`, no longer exists):
+https://web.archive.org/web/20201002111032/https://github.com/julester23/DCMotorServo
 
 \[30\] "adafruit/AccelStepper." Adafruit Industries, Mar. 08, 2024.
 Accessed: Apr. 08, 2024. \[Online\]. Available:
@@ -1073,6 +1077,7 @@ https://github.com/PaulStoffregen/Encoder
 Apr. 08, 2024. \[Online\]. Available:
 https://github.com/br3ttb/Arduino-PID-Library
 
-\[33\] "CameronBrooks11/DCMotorServo: An Arduino Library for controlling
-DC motors with rotary encoders." Accessed: Apr. 08, 2024. \[Online\].
-Available: https://github.com/CameronBrooks11/DCMotorServo
+\[33\] "feastorg/dcmotorservo: An Arduino Library for controlling DC
+motors with rotary encoders" (formerly CameronBrooks11/DCMotorServo).
+Accessed: Apr. 08, 2024. \[Online\]. Available:
+https://github.com/feastorg/dcmotorservo

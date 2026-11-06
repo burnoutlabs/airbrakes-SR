@@ -4,10 +4,17 @@ This is the repository for the Western Engineering Rocketry Team's design of an 
 
 **Status: the airbrakes never deployed in flight.** The project is inactive. See [docs/status.md](docs/status.md) for why, and for the state each subsystem reached.
 
+## Provenance
+
+- This repository (burnoutlabs/airbrakes-SR) is the canonical copy. It is a standalone copy of [werocketry/airbrakes-SR](https://github.com/werocketry/airbrakes-SR) and is not kept in sync with it; the werocketry original is left as it was.
+- The project began as [chasgior214/airbrakes-capstone](https://github.com/chasgior214/airbrakes-capstone), the MME 4499 2023-24 Group 13 capstone (now archived). This repository was split out of it on 2024-04-09 (commit `2a644e5`) and keeps its history.
+- Project status: [docs/status.md](docs/status.md).
+
 ## Sister Projects
 
-- [werocketry/RocketFlightSim](https://github.com/werocketry/RocketFlightSim)
-- [werocketry/HPR-Rocket-Flight-Computer](https://github.com/werocketry/HPR-Rocket-Flight-Computer)
+- [werocketry/RocketFlightSim](https://github.com/werocketry/RocketFlightSim): the flight simulator these simulations are built on.
+- [burnoutlabs/HPR-Rocket-Flight-Computer](https://github.com/burnoutlabs/HPR-Rocket-Flight-Computer): the flight computer the design was to use.
+- [werocketry/airbrakes-lookuptable-generator](https://github.com/werocketry/airbrakes-lookuptable-generator): the 2025 lookup table for the Hyperion II airbrakes.
 
 ## Acronyms of the Trade
 | Acronym | Full Name                                 | Description                                                                          |
