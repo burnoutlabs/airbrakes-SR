@@ -12,3 +12,4 @@ This project uses [werocketry/RocketFlightSim](https://github.com/werocketry/Roc
 7. [Production & Testing](prod_test.md)
 8. [Acknowledgements](acknowledgements.md)
 9. [Project Status](status.md)
+10. [Competition Notes (SAC 2023)](giorgio_comp_notes.md)

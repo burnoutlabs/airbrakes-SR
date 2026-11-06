@@ -93,7 +93,9 @@ being given but not the specific data (i.e. units). This required review
 of the datasheets for each individual sensor on the chip to understand
 the data unique and scale values. Subsequently the sensor fusion program
 development began using the AltitudeEstimation library, which began by
-creating the script given in Appendix VII for calculating the standard
+creating the script
+[`software/scripts/sensor_std_devs/std_devs.ino`](../software/scripts/sensor_std_devs/std_devs.ino)
+for calculating the standard
 deviations of the data returned by the accelerometer, gyroscope, and
 barometer. These are required input for the estimation of the altitude
 as they are used to determine the weight given to each of the readings

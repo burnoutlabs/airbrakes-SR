@@ -115,13 +115,21 @@ then developed to assess each concept. The specific criteria included:
 16. Auto-Closing
 
 Using the above criteria, a House of Quality (HOQ) and Pugh Matrix were
-constructed to compare each concept. The HOQ and Pugh Matrix can be
-found in Appendix I. In both methods, the concept that scored the
+constructed to compare each concept. Both are shown below. In both
+methods, the concept that scored the
 highest was the flap style airbrakes. The flap style airbrakes system
 triumphed compared to other designs for its high durability, redundancy,
 ease of manufacturability, and easy repairability. The flap style design
 also has flight heritage and a high TRL, unlike the Doppler hole and
 origami flashers concepts, which have both never been flown before.
+
+![House of Quality for the mechanical concepts](./media/image39.png)
+
+*House of Quality (QFD) for the mechanical concept evaluation.*
+
+![Pugh matrix for the mechanical concepts](./media/image40.png)
+
+*Pugh matrix for the mechanical concept evaluation.*
 
 At the concept selection phase, the airbrakes design consisted of four
 flaps. Four flaps in the design meant that a critical safety feature

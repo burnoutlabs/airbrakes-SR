@@ -5,8 +5,9 @@
 The following is an outline of the most important design requirements
 for the airbrakes system, as needed to understand the contents of the
 final report. Other requirements that did not have a major effect on the
-contents of this report may be found in Rev 1 of the Project
-Requirements document.
+contents of this report are in Rev 1 of the Project Requirements
+document, which is not in this repository (its import is tracked in
+[#12](https://github.com/burnoutlabs/airbrakes-SR/issues/12) and [#13](https://github.com/burnoutlabs/airbrakes-SR/issues/13)).
 
 The design requirements were generated primarily from two sources:
 consultation with the rocketry team to determine the specifications of
@@ -35,10 +36,10 @@ requirements, along with the rationale for each.
 | **Requirement ID** | **Requirement**                                                                   | **Rationale**                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |--------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | FR-002             | The system shall induce the correct amount of drag such that the rocket achieves its 10,000 ft target apogee to within +/- 200 ft. | The purpose of the airbrakes system is to enable the rocket to have a final apogee of as close as possible to 10,000 ft to maximize the team's flight score as laid out in section 2.7.1.4 of the SAC Rules & Requirements Document [4]. This score given for precise apogee targeting is 35% of the total points that a team can earn during the competition. +/- 200 ft is an achievable goal for most teams using airbrakes at SAC. Being 200 ft off-target would result in the rocketry team achieving 327 out of 350 possible points for final apogee, as per section 2.7.1.4 of the SAC Rules & Requirements Document [4]. |
-| FR-003             | The system shall survive exposure to 13.58gs of force when in its stowed configuration. | As determined by flight simulations (OpenRocket, RocketPy, custom flight simulator). See Section 11.4.5 for the determination of the value. |
-| FR-004             | The system shall survive exposure to the aerodynamic loading expected during max q: 48.7 kPa. | As determined by flight simulations (OpenRocket, RocketPy, custom flight simulator). See Section 11.4.5 for the determination of the value. Note that the flaps will never be deployed at max-q, because as per section 7.4 in SAC Design, Test, & Evaluation Guide, that is when they may begin to deploy [2]. |
+| FR-003             | The system shall survive exposure to 13.58gs of force when in its stowed configuration. | As determined by flight simulations (OpenRocket, RocketPy, custom flight simulator). See [Summary and Comparisons](detailed_design.md#summary-and-comparisons) for the determination of the value. |
+| FR-004             | The system shall survive exposure to the aerodynamic loading expected during max q: 48.7 kPa. | As determined by flight simulations (OpenRocket, RocketPy, custom flight simulator). See [Summary and Comparisons](detailed_design.md#summary-and-comparisons) for the determination of the value. Note that the flaps will never be deployed at max-q, because as per section 7.4 in SAC Design, Test, & Evaluation Guide, that is when they may begin to deploy [2]. |
 | FR-006             | The system shall default to a neutral state if any of the following occur: - The controller sends an abort signal. - Primary system power is lost. - The rocket's attitude exceeds 30° from its launch elevation. | A neutral state is defined as one which does not apply any moments to the rocket.|
-| FR-007             | The system shall remain in a neutral state until at least one of the following have occurred: - The rocket's boost phase has ended (i.e., all propulsive stages have ceased producing thrust), - The launch vehicle has crossed the point of maximum aerodynamic pressure (max Q) in its trajectory, - Or the launch vehicle has reached an altitude of 6,500 ft (2,000 m) AGL. | A neutral state is defined as one which does not apply any moments to the rocket. Competition requirement as per section 7.4 in SAC Design, Test, & Evaluation Guide [2]. The rocket has virtually no chance of clearing 20,000 ft before either of the first two conditions are met. In addition, with a single stage rocket of the order of magnitude of the WE Rocketry Team's previous rocket in the 10,000 ft category, the first two conditions will be met within a second of each other (as determined by the flight simulations detailed in Section 11.4). Therefore, the airbrakes can easily target a second or two after engine cut-off for a release of its mechanical locking system. |
+| FR-007             | The system shall remain in a neutral state until at least one of the following have occurred: - The rocket's boost phase has ended (i.e., all propulsive stages have ceased producing thrust), - The launch vehicle has crossed the point of maximum aerodynamic pressure (max Q) in its trajectory, - Or the launch vehicle has reached an altitude of 6,500 ft (2,000 m) AGL. | A neutral state is defined as one which does not apply any moments to the rocket. Competition requirement as per section 7.4 in SAC Design, Test, & Evaluation Guide [2]. The rocket has virtually no chance of clearing 20,000 ft before either of the first two conditions are met. In addition, with a single stage rocket of the order of magnitude of the WE Rocketry Team's previous rocket in the 10,000 ft category, the first two conditions will be met within a second of each other (as determined by the flight simulations detailed in [Flight Dynamics](detailed_design.md#flight-dynamics)). Therefore, the airbrakes can easily target a second or two after engine cut-off for a release of its mechanical locking system. |
 
 
 ## Physical Requirements
@@ -72,8 +73,9 @@ for the system, along with the rationale for each.
 
 The programmatic requirements refer to the specific needs that are
 required to meet technological, programmatic, or regulatory demands.
-Table 4 provides a summary of the most important programmatic
-requirements for the system, along with the rationale for each.
+The report's summary table of programmatic requirements is not in this
+repository (its import is tracked in [#12](https://github.com/burnoutlabs/airbrakes-SR/issues/12) and
+[#13](https://github.com/burnoutlabs/airbrakes-SR/issues/13)).
 
 
 ## References

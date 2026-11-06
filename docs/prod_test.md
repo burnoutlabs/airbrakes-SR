@@ -16,7 +16,7 @@ containing the airbrakes is equal to the force required to accelerate
 the mass at and above the airbrakes system with the maximum acceleration
 that the rocket will experience (which occurs during its motor burn when
 the airbrakes are not deployed, specifically at the moment when the
-motor hits its peak thrust of 2938 N). As reported in Section 11.4.5,
+motor hits its peak thrust of 2938 N). As reported in [Summary and Comparisons](detailed_design.md#summary-and-comparisons),
 the maximum acceleration is projected to be 13.58 g. The mass at and
 above the airbrakes system is 11.63 kg. The total thrust transferred
 through the airbrakes to the upper portion of the rocket is the mass
