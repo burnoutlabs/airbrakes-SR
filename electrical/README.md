@@ -13,9 +13,11 @@ None of this hardware flew; see [docs/status.md](../docs/status.md).
 | [`motor_analysis/servo_analysis.ipynb`](motor_analysis/servo_analysis.ipynb) | An early study of a servo motor (MG996R) as the actuator. | Superseded: the design moved to a brushed DC gearmotor. The final load and torque analysis is in [`mechanical/load_analysis.ipynb`](../mechanical/load_analysis.ipynb). |
 | `datasheets/` (in each project) | A4957 and A1324/5/6 datasheets, one marked up. | Reference. |
 
-The `*-backups/` folders and `_autosave-*` files in the two project folders
-are KiCad editor leftovers, not design files
-([#5](https://github.com/burnoutlabs/airbrakes-SR/issues/5)).
+KiCad backup zips (`*-backups/`), autosaves (`_autosave-*`), caches
+(`fp-info-cache`) and per-user `.kicad_prl` files are editor leftovers, not
+design files. Any such files in the project folders are slated for removal
+([#5](https://github.com/burnoutlabs/airbrakes-SR/issues/5)); once that
+cleanup lands, `electrical/BACKUPS.md` records what they held.
 
 ## Opening the projects
 
