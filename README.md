@@ -2,6 +2,8 @@
 
 This is the repository for the Western Engineering Rocketry Team's design of an airbrakes system.
 
+**Status: the airbrakes never deployed in flight.** The project is inactive. See [docs/status.md](docs/status.md) for why, and for the state each subsystem reached.
+
 ## Sister Projects
 
 - [werocketry/RocketFlightSim](https://github.com/werocketry/RocketFlightSim)

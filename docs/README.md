@@ -11,3 +11,4 @@ This project uses [chasgior214/RocketFlightSim](https://github.com/chasgior214/R
 6. [Production Planning](plan_prod.md)
 7. [Production & Testing](prod_test.md)
 8. [Acknowledgements](acknowledgements.md)
+9. [Project Status](status.md)
