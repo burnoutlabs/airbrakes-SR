@@ -13,7 +13,7 @@ This is the repository for the Western Engineering Rocketry Team's design of an 
 ## Sister Projects
 
 - [werocketry/RocketFlightSim](https://github.com/werocketry/RocketFlightSim): the flight simulator these simulations are built on.
-- [burnoutlabs/HPR-Rocket-Flight-Computer](https://github.com/burnoutlabs/HPR-Rocket-Flight-Computer): the flight computer the design was to use.
+- [burnoutlabs/hpr-flight-computer](https://github.com/burnoutlabs/hpr-flight-computer): the flight computer the design was to use.
 - [werocketry/airbrakes-lookuptable-generator](https://github.com/werocketry/airbrakes-lookuptable-generator): the 2025 lookup table for the Hyperion II airbrakes.
 
 ## Acronyms of the Trade
@@ -36,3 +36,6 @@ This is the repository for the Western Engineering Rocketry Team's design of an 
 | SRAD    | Student researched and designed           |                                                                                      |
 | VLA     | Vertical Launch Area                      |                                                                                      |
 | WERT    | Western Engineering Rocketry Team         | Also called WE Rocketry                                                              |
+## License
+
+None yet. This is joint team work, so a license needs the co-authors' agreement; that is tracked in [#4](https://github.com/burnoutlabs/airbrakes-SR/issues/4).
