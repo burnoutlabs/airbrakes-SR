@@ -927,7 +927,8 @@ https://web.archive.org/web/20201002111032/https://github.com/julester23/DCMotor
 
 \[30\] "adafruit/AccelStepper." Adafruit Industries, Mar. 08, 2024.
 Accessed: Apr. 08, 2024. \[Online\]. Available:
-https://github.com/adafruit/AccelStepper
+https://github.com/adafruit/AccelStepper (archived read-only by its
+owner since this citation was made)
 
 \[31\] P. Stoffregen, "PaulStoffregen/Encoder." Mar. 30, 2024. Accessed:
 Apr. 08, 2024. \[Online\]. Available:
