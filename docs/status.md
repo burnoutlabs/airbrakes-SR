@@ -2,8 +2,9 @@
 
 **DMATS (Drag Modulation Apogee Targeting System) never deployed in flight.**
 It was planned for two rockets, Hyperion at the 2024 Spaceport America Cup
-and Hyperion II in 2025, and did not fly as a working system on either.
-The project is inactive.
+and Hyperion II in 2025, and was not deployed on either (owner statement,
+2026-11-05). The last commit on `main` before this record is `99d8a5c`,
+dated 2024-07-05 (`git log -1 --format=%ad`).
 
 Every statement below cites a path in this repository (at commit `99d8a5c`
 unless another commit is named), a commit, a linked repository, or the
