@@ -442,9 +442,9 @@ parts indicated.*
 
 The method and results of this analysis are in this repository:
 [`mechanical/load_analysis.ipynb`](../mechanical/load_analysis.ipynb)
-(static load analysis) and
-[`electrical/motor_analysis/`](../electrical/motor_analysis/) (load-torque
-analysis and motor sizing).
+(static load, lead screw efficiency and torque analysis). An earlier
+servo motor study is in
+[`electrical/motor_analysis/servo_analysis.ipynb`](../electrical/motor_analysis/servo_analysis.ipynb).
 The force-torque analysis began with converting the mechanical geometric
 of the leadscrew push-rod mechanism into a static mechanical model.
 Figure 21 displays a stripped down and highlighted version of the
