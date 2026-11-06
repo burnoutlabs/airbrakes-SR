@@ -25,7 +25,7 @@ results in binding due to the lead screw pressing against the platforms,
 while too much distance introduces unwanted play in the mechanism. The
 incorporation of these spacers, firmly secured with screws, ensures the
 correct spacing is consistently maintained, highlighted in blue in
-[]{.mark}Figure 14. This approach was deemed suitable as it had been
+Figure 14. This approach was deemed suitable as it had been
 effectively tested in the 3D-printed mechatronic model and the
 airbrake\'s weight budget comfortably accommodated the additional mass.
 
@@ -49,25 +49,26 @@ installation of magnets on the lead nut. These changes, though minor,
 were crucial for the precise functioning of the mechanism, illustrated
 in Figure 15.
 
-![A black machine with metal parts Description automatically
-generated](./media/image14.png)
-![A close up of a machine Description automatically
-generated](./media/image15.png)
-  ----------------------------------------------------------------------------------------------------------------------------------------------------
-  ![A black metal object with holes Description automatically               ![A black object with holes Description automatically
-  generated](./media/image16.png){width="2.611408573928259in"   generated](./media/image17.png){width="2.4880949256342957in"
-  height="2.1404636920384954in"}                                            height="2.1489063867016625in"}
-  ------------------------------------------------------------------------- --------------------------------------------------------------------------
+![CAD view of the lead screw with a washer at each end](./media/image14.png)
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------
+*Figure 13: Precision tolerance washers at both ends of the lead screw.*
 
-  : []{#_Ref163390546 .anchor}Figure 1: Rocket with airbrakes: surfaces
-  controlled by a servomotor which can increase the longitudinal drag
-  forces. The airbrakes are located behind the center of pressure to
-  guarantee stability.
+![CAD view of the mechanism with the three platform spacers in blue](./media/image15.png)
 
-![A black object with metal parts Description automatically
-generated](./media/image18.png)
+*Figure 14: Platform spacers (blue) holding the distance between the top
+and bottom platforms.*
+
+![CAD view of the lead nut carrier from above](./media/image16.png)
+![CAD view of the lead nut carrier from below](./media/image17.png)
+
+*Figure 15: Lead nut carrier (two views), modified for the Hall effect
+sensor end stops.*
+
+![CAD view of the top of the assembly with the motor mount](./media/image18.png)
+
+*Figure 16: Motor mount on the top platform, coupling the motor to the
+lead screw.*
+
 ## Mechanical Material Selection
 
 ### 3D Printed Components
@@ -263,22 +264,15 @@ GitHub, and visualizations of the simulation results can be found in the
 file visualizations.ipynb. Key figures for this report determined by the
 simulation are shown below in Table 5:
 
-  -----------------------------------------------------------------------
-  Figure                                        Value
-  --------------------------------------------- -------------------------
-  Apogee without airbrakes deployment           11745 ft (3580 m)
+*Table 5: Key figures from the custom flight simulation.*
 
-  Apogee with maximum airbrakes deployment      9977 ft (3041 m)
-
-  Maximum g-force                               13.58 g
-
-  Max-q on rocket                               49.63 kPa
-
-  Maximum force on a flap                       32.5 N
-  -----------------------------------------------------------------------
-
-  : []{#_Toc163515992 .anchor}Figure 2: ARAC model in fully closed state
-  (left), Isometric view of ARAC model in max extension state (right).
+| Figure | Value |
+| --- | --- |
+| Apogee without airbrakes deployment | 11745 ft (3580 m) |
+| Apogee with maximum airbrakes deployment | 9977 ft (3041 m) |
+| Maximum g-force | 13.58 g |
+| Max-q on rocket | 49.63 kPa |
+| Maximum force on a flap | 32.5 N |
 
 In accordance with FR-002, the airbrakes as simulated can induce enough
 drag to reduce the rocket's apogee to within 200 ft of its 10 000 ft
@@ -288,10 +282,14 @@ deployed (Figure 17) versus when the airbrakes are deployed as fast as
 they can be (and then remain fully deployed for the duration of the
 flight, in Figure 18).
 
-![A graph of different colored lines Description automatically
-generated](./media/image19.png)
-![A graph of different colored lines Description automatically
-generated](./media/image20.png)
+![Simulated flight profile without airbrakes deployment](./media/image19.png)
+
+*Figure 17: Simulated flight without airbrakes deployment.*
+
+![Simulated flight profile with the airbrakes fully deployed](./media/image20.png)
+
+*Figure 18: Simulated flight with the airbrakes deployed as fast as
+possible and held fully deployed.*
 
 It should be noted that as of the publication of this report, the mass
 budget of the rocket is in a state of flux as some final design
@@ -338,22 +336,13 @@ $$F_{g\ max} = \frac{F_{thrust\ max}}{m_{rocket\ dry} + m_{fuel}(t = t\left( F_{
 
 The inputs to Equation 1 are summarized below in Table 6:
 
-  -----------------------------------------------------------------------
-  Parameter                           Value
-  ----------------------------------- -----------------------------------
-  Maximum thrust force of the         2938 N
-  Cesaroni 7450M2505-P motor \[23\]   
+*Table 6: Inputs to Equation 1.*
 
-  Dry mass of the rocket              17.963 kg
-
-  Mass of fuel remaining in the       1.982 kg
-  Cesaroni 7450M2505-P motor at the   
-  time of maximum thrust (1.2s)       
-  \[23\]                              
-  -----------------------------------------------------------------------
-
-  : []{#_Toc163515993 .anchor}Figure 3: Underside view of ARAC system
-  near max extension; linkage mechanism identified.
+| Parameter | Value |
+| --- | --- |
+| Maximum thrust force of the Cesaroni 7450M2505-P motor \[23\] | 2938 N |
+| Dry mass of the rocket | 17.963 kg |
+| Mass of fuel remaining in the Cesaroni 7450M2505-P motor at the time of maximum thrust (1.2s) \[23\] | 1.982 kg |
 
 Given the values in Table 6, Equation 1 yields a maximum g-force on the
 rocket of 14.02 g.
@@ -374,7 +363,7 @@ Using the thrust curve and fuel burn rate of the Cesaroni 7450M2505-P
 motor \[23\] and the dry mass of the rocket (as reported in Table 6),
 the maximum velocity the rocket could theoretically attain is 342.1 m/s.
 Using this value and taking the worst-case value for air density as the
-air density at the launchpad (0.98 kg/m^3^)[^1], an upper bound for the
+air density at the launchpad (0.98 kg/m³), an upper bound for the
 aerodynamic pressure that the rocket cannot physically reach can be
 calculated using Equation 3:
 
@@ -389,26 +378,14 @@ The results of the different simulations and bounding calculations are
 well-aligned. Comparisons of the four methods are summarized below in
 Table 7:
 
-  ----------------------------------------------------------------------------
-  Method         Maximum   Max-q (kPa)  Apogee - no        Apogee - max
-                 g-force                airbrakes          airbrakes
-                 (g)                    deployment (ft)    deployment (ft)
-  -------------- --------- ------------ ------------------ -------------------
-  Custom         13.58     49.63        11745              9977
-  Simulator                                                
+*Table 7: Comparison of the flight dynamics methods.*
 
-  OpenRocket (no 13.47     47.00        10469              \-
-  wind)                                                    
-
-  RocketPy (no   13.56     53.8         11880              10078
-  wind)                                                    
-
-  Bounding       14.02     57.34        \-                 \-
-  Calculations                                             
-  ----------------------------------------------------------------------------
-
-  : []{#_Toc148736783 .anchor}Figure 4: EULER full-body CFD: pressure at
-  Ma 1.2.
+| Method | Maximum g-force (g) | Max-q (kPa) | Apogee - no airbrakes deployment (ft) | Apogee - max airbrakes deployment (ft) |
+| --- | --- | --- | --- | --- |
+| Custom Simulator | 13.58 | 49.63 | 11745 | 9977 |
+| OpenRocket (no wind) | 13.47 | 47.00 | 10469 | - |
+| RocketPy (no wind) | 13.56 | 53.8 | 11880 | 10078 |
+| Bounding Calculations | 14.02 | 57.34 | - | - |
 
 ### Stopping Power Analysis
 
@@ -422,9 +399,11 @@ and remained fully deployed for the duration of the flight (giving the
 maximum possible drag that airbrakes with that specific deployment speed
 and flap size could produce).
 
-![A color palette with different shades of red and orange Description
-automatically
-generated](./media/image21.png)
+![Heat map of simulated apogee against deployment speed and flap size](./media/image21.png)
+
+*Figure 19: Stopping power analysis: simulated apogee for each
+deployment speed and flap size, with the airbrakes held fully deployed.*
+
 ## Electrical Design
 
 The electrical design presented herein is scoped into two versions or
@@ -451,10 +430,14 @@ external environment which is read by the microcontroller along with
 information obtained from the system sensors on the internal state of
 the mechanism to determine actuation of the motor circuit. The FP
 electrical schematic is shown in Figure 20 with the major parts
-indicated. Individual figures for each of the blocks are given in
-Appendix II for easier in-depth viewing.
+indicated. The KiCad project for this schematic is
+[`electrical/dmats_hw_v1_0/`](../electrical/dmats_hw_v1_0/).
 
-![](./media/image22.png)
+![Functional prototype electrical schematic](./media/image22.png)
+
+*Figure 20: Functional prototype electrical schematic, with the major
+parts indicated.*
+
 ### Load Analysis & Motor Selection
 
 The method and results of this analysis are in this repository:
@@ -467,9 +450,10 @@ of the leadscrew push-rod mechanism into a static mechanical model.
 Figure 21 displays a stripped down and highlighted version of the
 mechanical model to only show the essential components of the problem.
 
-![A blue red and yellow metal object with a blue and green line
-Description automatically generated with medium
-confidence](./media/image23.png)
+![Highlighted CAD view of the lead screw, push rod and flap](./media/image23.png)
+
+*Figure 21: Simplified mechanical model of the lead-screw push-rod
+mechanism.*
 
 The simplicity of the mechanism allowed it to be readily converted into
 a simple two-force member model diagram in which to solve, shown in
@@ -481,16 +465,11 @@ kPa) at full deployment (41.35°). It is directed at the midpoint of
 member CD since it assumes an even distribution of force across the
 length.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------
-  ![A diagram of lines and arrows Description automatically                  ![A diagram of arrows pointing to a square Description automatically
-  generated](./media/image24.png){width="3.2395833333333335in"   generated](./media/image25.png){width="1.4919674103237095in"
-  height="1.596392169728784in"}                                              height="1.5958333333333334in"}
-  -------------------------------------------------------------------------- --------------------------------------------------------------------------
+![Two-force member model of the mechanism](./media/image24.png)
+![Force components at a pin](./media/image25.png)
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------
-
-  : []{#_Toc148736784 .anchor}Figure 5: EULER full-body CFD: fin
-  interaction.
+*Figure 22: Two-force member model of the mechanism (left) and the force
+components at the pin (right).*
 
 The force can be decomposed into its components using the known theta
 angle, this force will be equally shared between the two pins and then
@@ -552,8 +531,7 @@ the worse-case-scenario.
 
 To evaluate the required torque of the expected scenario, the force
 profile obtained in the flight dynamics analysis is fed into the
-load-torque analysis to obtain the torque curve seen in Figure 23Figure
-23. Based on the required number of rotations required for the
+load-torque analysis to obtain the torque curve seen in Figure 23. Based on the required number of rotations required for the
 deployment of the mechanism (25.38 rotations) and the estimated
 deployment time from the flight dynamics analysis (8.18 seconds) the
 required speed can be calculated to be approximately 186 RPM. In
@@ -561,46 +539,32 @@ preparation for motor selection additional calculations were written to
 obtain the motor requirements in various units and conventions to aid in
 components sourcing and are included in the analysis script.
 
-![A graph of a person and person Description automatically generated
-with medium confidence](./media/image26.png)
+![Plot of required torque over the deployment](./media/image26.png)
+
+*Figure 23: Required torque over the deployment, from the flight
+dynamics force profile.*
+
 Based on the given requirements a 20mm 12V Planetary Gearmotor with an
 Encoder was selected, the specifications of which are in Table 8.
 
-  -----------------------------------------------------------------------------
-  **Component**   **Dimension/Specification**   **Value/Description**
-  --------------- ----------------------------- -------------------------------
-  *Gearbox*       Diameter x Length             20D x 21.5L mm
+*Table 8: Specifications of the selected gearmotor.*
 
-  *Motor*         Diameter x Height x Length    20D x 14H x 32L mm
-
-  *Shaft*         Diameter x Length, Shape      4D x 10.5L mm, D-shaped
-
-  *Encoder*       Type, channel number, pulses  Magnetic encoder, 2 channels,
-                  per rotation                  11PPR
-
-  *Model*                                       20PG-180SH-29-EN 12V
-
-  *Electrical*    Voltage                       12V DC
-
-                  Reduction Ratio               1:29
-
-                  No-load Speed                 515 RPM
-
-                  No-load Current               \< 280 mA
-
-                  Rated Torque                  0.65 kg.cm
-
-                  Rated Speed                   445 RPM
-
-                  Rated Current                 \< 550 mA
-
-                  Stall Torque                  \> 3 Kg.cm
-
-                  Stall Current                 \< 2.7 A
-  -----------------------------------------------------------------------------
-
-  : []{#_Toc148736785 .anchor}Figure 6: The ThrustMIT Airbrake system in
-  both the stowed and deployed positions.
+| Component | Dimension/Specification | Value/Description |
+| --- | --- | --- |
+| *Gearbox* | Diameter x Length | 20D x 21.5L mm |
+| *Motor* | Diameter x Height x Length | 20D x 14H x 32L mm |
+| *Shaft* | Diameter x Length, Shape | 4D x 10.5L mm, D-shaped |
+| *Encoder* | Type, channel number, pulses per rotation | Magnetic encoder, 2 channels, 11PPR |
+| *Model* | | 20PG-180SH-29-EN 12V |
+| *Electrical* | Voltage | 12V DC |
+| | Reduction Ratio | 1:29 |
+| | No-load Speed | 515 RPM |
+| | No-load Current | \< 280 mA |
+| | Rated Torque | 0.65 kg.cm |
+| | Rated Speed | 445 RPM |
+| | Rated Current | \< 550 mA |
+| | Stall Torque | \> 3 Kg.cm |
+| | Stall Current | \< 2.7 A |
 
 The selection of a brushed DC motor for the project was guided by
 several critical design requirements. Firstly, the application\'s need
@@ -624,8 +588,18 @@ rated) of the rated torque which will place the required speed firmly
 within the acceptable range for pulse-width modulation control (155 RPM
 operating to 445 rated).
 
-![A small electric motor with wires Description automatically
-generated](./media/image27.png)
+> **Note (added after testing):** the prototype did not bear this out.
+> Under the maximum expected flap loads the motor stalled at mid-stroke
+> and could only drive the upper and lower ~30% of the lead screw; see
+> [Actuation Testing](prod_test.md#actuation-testing) in
+> `prod_test.md`. The force model and motor selection need revisiting
+> ([#16](https://github.com/burnoutlabs/airbrakes-SR/issues/16)). The
+> text above is the report as written.
+
+![The selected gearmotor with its encoder and cable](./media/image27.png)
+
+*Figure 24: The selected 20 mm 12 V planetary gearmotor with encoder.*
+
 ### Motor Driver Circuit
 
 The motor circuit consists of the selected brushed DC motor driven by
@@ -638,28 +612,22 @@ allowing control of both speed and direction with high voltage and
 current up to 46V and 2A per channel under continuous operation and up
 to 3A for intermittent operation, featuring built-in diode protection
 against back-EMF. As per the product datasheet, the outputs can be
-paralleled for higher current output by according to Figure 25,
-equivalent parallel pairs are given in for clarity.
+paralleled for higher current output according to Figure 25; the
+equivalent parallel pairs are given in Table 9 for clarity.
 
-![A diagram of a circuit Description automatically
-generated](./media/image28.png)
-  -----------------------------------------------------------------------
-  **Full Bridge A**                   **Full Bridge B**
-  ----------------------------------- -----------------------------------
-  IN1                                 IN4
+![L298N parallel output wiring diagram](./media/image28.png)
 
-  IN2                                 IN3
+*Figure 25: Paralleling the L298N outputs for higher current \[25\].*
 
-  OUT1                                OUT4
+*Table 9: Equivalent parallel pairs of the L298N full bridges.*
 
-  OUT2                                OUT3
-
-  ENA                                 ENB
-  -----------------------------------------------------------------------
-
-  : []{#_Toc163515997 .anchor}Figure 7: The retracted (left) and
-  deployed (right) CAD renderings of the airbrakes mechanism used by
-  ARIS in 2018.
+| Full Bridge A | Full Bridge B |
+| --- | --- |
+| IN1 | IN4 |
+| IN2 | IN3 |
+| OUT1 | OUT4 |
+| OUT2 | OUT3 |
+| ENA | ENB |
 
 ### Flight Sensors
 
@@ -675,46 +643,18 @@ collection for flight dynamics analysis. A summary of the sensors and
 their contextual applications is given in Table 10: Arduino Pro Nicla
 Sense Motion and Environment Sensors and Contextual Applications.
 
-  -----------------------------------------------------------------------------
-  **Sensor Type** **Part**   **Description**                 **Context**
-  --------------- ---------- ------------------------------- ------------------
-  Accelerometer   BHI260AP   3-axis, part of an integrated   Detecting and
-                             sensor hub with AI capabilities analyzing motion
-                             for motion detection.           patterns.
+*Table 10: Arduino Pro Nicla Sense ME Motion and Environment Sensors and
+Contextual Applications.*
 
-  Gyroscope       BHI260AP   3-axis, integrated within       Orientation
-                             BHI260AP for orientation and    tracking and
-                             motion tracking.                motion correction.
-
-  Pressure        BMP390     Operates between 300 - 1250 hPa Altitude and
-                             with high accuracy and low      atmospheric
-                             drift for atmospheric           pressure data.
-                             measurements.                   
-
-  Magnetometer    BMM150     Measures magnetic fields within Orientation to
-                             ±1300μT in X,Y axes and ±2500μT Earth\'s magnetic
-                             in Z axis with low noise.       field, used for
-                                                             header correction.
-
-  Humidity        BME688     Measures relative humidity as   Unused. Potential
-                             part of environmental sensing   future use in
-                             capabilities.                   assessing launch
-                                                             site conditions.
-
-  Temperature     BME688     Accurate temperature            Unused. Potential
-                             measurement as part of the      future use in
-                             environmental sensor suite.     assessing launch
-                                                             site conditions.
-
-  Gas/VOCs        BME688     Detects a wide range of gases   Unused. Potential
-                             including VOCs for air quality  future use in
-                             assessment.                     assessing launch
-                                                             site conditions.
-  -----------------------------------------------------------------------------
-
-  : []{#_Toc163515998 .anchor}Figure 8: Diagrammatic visual of Avionics
-  Control Schematic from the University of Ottawa Student Team of
-  Aeronautics and Rocketry airbrakes in 2018.
+| Sensor Type | Part | Description | Context |
+| --- | --- | --- | --- |
+| Accelerometer | BHI260AP | 3-axis, part of an integrated sensor hub with AI capabilities for motion detection. | Detecting and analyzing motion patterns. |
+| Gyroscope | BHI260AP | 3-axis, integrated within BHI260AP for orientation and motion tracking. | Orientation tracking and motion correction. |
+| Pressure | BMP390 | Operates between 300 - 1250 hPa with high accuracy and low drift for atmospheric measurements. | Altitude and atmospheric pressure data. |
+| Magnetometer | BMM150 | Measures magnetic fields within ±1300μT in X,Y axes and ±2500μT in Z axis with low noise. | Orientation to Earth\'s magnetic field, used for header correction. |
+| Humidity | BME688 | Measures relative humidity as part of environmental sensing capabilities. | Unused. Potential future use in assessing launch site conditions. |
+| Temperature | BME688 | Accurate temperature measurement as part of the environmental sensor suite. | Unused. Potential future use in assessing launch site conditions. |
+| Gas/VOCs | BME688 | Detects a wide range of gases including VOCs for air quality assessment. | Unused. Potential future use in assessing launch site conditions. |
 
 ### System Sensors
 
@@ -772,109 +712,16 @@ environment for efficient system performance.
 
 ### Power Supply
 
-The power supply for the project relies on Lithium-ion (Li-ion)
-batteries, selected for their high energy density and efficiency. The
-choice of Li-ion batteries was heavily influenced by competition rules
-that explicitly ban the use of Lithium Polymer (LiPo) batteries \[4\]
-and our research showed that this is a common alternative used in the
-SAC competition. In selection of the battery cells the capacity, max
-discharge rate, and voltage requirements were considered. The power
-consumption ratings for each of the relevant components is given in
-Table 11.
+The power supply uses three Panasonic NCR18650GA 3450 mAh Li-ion cells
+in series (3S, nominal 11.1 V) for the 12 V motor. Li-ion cells were
+chosen because the competition rules ban LiPo batteries \[4\]. The
+sizing calls for at least 700 mAh per cell and a 5000 mA minimum
+discharge current, the motor's stall current.
 
-+----------------------+-----------------------+-----------------------+
-| **Component**        | **Electrical Power**  | **Details**           |
-+======================+=======================+=======================+
-| Portenta H7          | 2.6 mA @ 3.7V         | Current consumption   |
-|                      |                       | in busy loop (@5V)    |
-|                      |                       | \[max with on board   |
-|                      |                       | LEDs off\].           |
-+----------------------+-----------------------+-----------------------+
-| Nicla Sense ME       | 2.5 mA @ 3.7V         | Power consumption     |
-|                      |                       | advertising with      |
-|                      |                       | sensor polling at 1Hz |
-|                      |                       | \[max consumption     |
-|                      |                       | state\].              |
-+----------------------+-----------------------+-----------------------+
-| L298N Motor Driver   | 4 mA @ 12V            | Quiescent supply &    |
-| (V~EN~=L)            |                       | VSS current of        |
-|                      | 6mA @ 5V              | inactive driver \[max |
-|                      |                       | value of range        |
-|                      |                       | taken\].              |
-+----------------------+-----------------------+-----------------------+
-| L298N Motor Driver   | 22 mA @ 12V           | Quiescent supply &    |
-| (V~EN~=H)            |                       | VSS current of active |
-|                      | 36 mA @ 12V           | driver \[max value of |
-|                      |                       | range taken\].        |
-+----------------------+-----------------------+-----------------------+
-| Brushed DC Motor     | 5000 mA @ 12V         | Stall current of the  |
-|                      |                       | selected motor.       |
-+----------------------+-----------------------+-----------------------+
-| Hall Effect Sensor   | 6.9 mA @ 5V           | Supply current of the |
-|                      |                       | IC.                   |
-+----------------------+-----------------------+-----------------------+
-
-: []{#_Toc163515999 .anchor}Figure 9: Pancake Airbrakes.
-
-To calculate the required capacity, the 20-hour required standby time
-given in ER-003 and an active motor time of 10 seconds (approximately a
-FOS of double the predicted motor action time. This yields a total
-required capacity of approximately 400 mAh, the calculations are broken
-down in Table 12. The datasheet for the Arduino Portenta recommends a
-greater minimum of 700 mAh for battery powered use and this will hence
-be used as the single cell minimum herein.
-
-  ----------------------------------------------------------------------------------
-  **Phase**    **Component**       **Current   **Voltage   **Active   **Energy
-                                   (mA)**      (V)**       Time**     Required
-                                                                      (mAh)**
-  ------------ ------------------- ----------- ----------- ---------- --------------
-  Standby      Portenta H7         2.6         3.7         20h        52
-
-               Nicla Sense ME      2.5         3.7         20h        50
-
-               L298N Motor Driver  6           5           20h        120
-
-               Hall Effect Sensor  6.9         5           20h        138
-
-  Standby                                                             360
-  Subtotal                                                            
-
-  Active       Brushed DC Motor    5000        12          20s        27.78
-
-               L298N Motor Driver  36          12          20s        0.2
-               (Active)                                               
-
-  Active                                                              27.98
-  Subtotal                                                            
-
-  *Total                                                              387.98
-  Required                                                            
-  Energy*                                                             
-  ----------------------------------------------------------------------------------
-
-  : []{#_Toc163516000 .anchor}Figure 10: Flap Airbrakes.
-
-The MCU board is supplied with by a single 3.7V cell which the onboard
-regulator regulates to 5V to power the 5V components. The DC motor is
-rated at 12V therefore 3 cells are required to reach the required
-potential which results in a nominal 11.1V (within 10%). As the cells
-will be wired in a 3 series (3S) configuration each must independently
-be capable of supplying the maximum current of the motor, that is 5000
-mA which sets the required minimum discharge current.
-
-This gives a selection criterion of three cells rated at least 700 mAh
-each with a minimum discharge rate of 5000 mA. The Panasonic NCR18650GA
-3450mAh 10A Battery was chosen for this application as it meets and
-exceeds these required specifications while remaining well within
-budget. It\'s important to note that most modern lithium-ion cells, even
-those that are more affordably priced, meet or exceed the required
-specifications for this project making the exact product selection
-rather arbitrary. Therefore, the specific selection of the product was
-primarily driven by the reputable brand name, price point, and supplier
-accessibility. The power to the microcontroller uses the same model of
-low-power switch as for the user input and the power switch to enable
-power to the motor circuit is a power switched rated up to 6A.
+The full analysis, with the per-component power consumption table, the
+energy requirement breakdown and the cell selection, is in
+[`electrical/power_analysis/README.md`](../electrical/power_analysis/README.md).
+It was kept there rather than duplicated here.
 
 ### Development: Full Bridge MOSFET Motor Driver Circuit
 
@@ -911,27 +758,40 @@ Lastly, the discrete motor driver can handle higher voltage and current
 levels than the L298N, broadening the range of compatible motors if
 future iterations require upsizing of the motor.
 
-![](./media/image29.png)
-![](./media/image30.png)
+![Production prototype schematic](./media/image29.png)
+
+*Figure 26: Production prototype schematic.*
+
+![A4957 discrete motor driver schematic](./media/image30.png)
+
+*Figure 27: Discrete motor driver schematic based on the Allegro A4957.*
+
 ### Development: Printed Circuit Board 
 
 The development of a printed circuit board to correspond to the PP
 circuit presented above is here presented as-is and under development as
 it still requires further validation and verification. The printed
-circuit board layout in the editor is displayed in []{.mark}Figure 28.
+circuit board layout in the editor is displayed in Figure 28.
 The discrete motor driver section aligns with the specific routing
 patterns and fill plane placement outlined by the manufacturer to reduce
 noise, aid thermal management, and optimize layout efficiency.
 
-![A circular object with a hole in the middle Description automatically
-generated](./media/image31.png)
+![Circular PCB layout in the KiCad editor](./media/image31.png)
+
+*Figure 28: Production prototype PCB layout in the editor. The KiCad
+project is [`electrical/dmats_hw_v2_0/`](../electrical/dmats_hw_v2_0/).*
+
 ## Software Design
 
 The overall software design consists of three distinct programs running
 in parallel: 1) the flight computer, 2) the actuation controller, and 3)
-the sensor client application. The flowchart diagram showing the core
+the sensor client application. The flowchart in Figure 29 shows the
+core of each program.
 
-![](./media/image32.png)
+![Software flowchart of the three programs](./media/image32.png)
+
+*Figure 29: Software flowchart.*
+
 ### Flight Computer
 
 The flight computer software serves to track the flight of the rocket in
@@ -941,9 +801,8 @@ is a customized version of the HPR-Rocket-Flight-Computer found on
 GitHub, created by a registered rocketeer \[26\]. The core of the
 program has been developed, however still requires significant
 development and testing before flight due to the extensive size and
-complexity of the program which contains nearly 10,000 lines of code. An
-example of the main loop for the program is included in Appendix III for
-brevity and due to the incomplete nature of the entire program. An
+complexity of the program which contains nearly 10,000 lines of code.
+That program is not in this repository. An
 important aspect of the software design is the usage of strict data
 structures for transporting sensor data and system events in an
 organized and structured manner. All relevant program data is
@@ -983,8 +842,8 @@ desired position and the current position returned by the encoder. To
 achieve this, a library was developed based on a legacy library \[29\]
 inspired by AccelStepper library by Adafruit \[30\] and uses both the
 Encoder library \[31\] and PID library \[32\] available in the Arduino
-library manager. The header and main C++ file for the library can be
-found in Appendices IV & V. Additional examples and scripts were created
+library manager. The library's header and source are published at
+[feastorg/dcmotorservo](https://github.com/feastorg/dcmotorservo). Additional examples and scripts were created
 to test the feedback of the encoder, tune the PID action, and configure
 preset distances \[33\].
 
@@ -992,7 +851,8 @@ preset distances \[33\].
 
 The client application that runs on the Nicla Sense ME is an unaltered
 version provided by the manufacturer to set the device to act as a
-client device and is given in Appendix VI.
+client device and is in
+[`software/src/sense_app/sense_app.ino`](../software/src/sense_app/sense_app.ino).
 
 ## References
 

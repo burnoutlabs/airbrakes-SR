@@ -30,8 +30,9 @@ determine if the section of body tube on the final rocket with holes cut
 in it for the flaps to go through would be able to withstand the loads
 it will experience at the moment of maximum thrust transfer.
 
-![A close up of a machine Description automatically
-generated](./media/image37.png)
+![Body tube with flap cutouts in the compression tester](./media/image37.png)
+
+*Figure 32: Compression test of the body tube with flap cutouts.*
 
 There was a marked (though not unexpected) difference in the strength of
 the tube with the cutouts compared to the tubes without the cutouts. The
@@ -91,5 +92,6 @@ loads they would see during flight. The mechanical assembly successfully
 supported the maximum expected flight loads, as can be seen in Figure
 35:
 
-![No description
-available.](./media/image38.jpeg)
+![Airbrakes assembly with the flaps loaded](./media/image38.jpeg)
+
+*Figure 35: Loaded test of the mechanical assembly.*

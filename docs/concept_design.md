@@ -22,8 +22,9 @@ of the pancake style airbrakes used in École Polytechnique Fédérale de
 Lausanne's rocket design that competed in the Spaceport America Cup in
 2018. 
 
-![No photo description
-available.](./media/image10.jpeg)
+![Pancake-style airbrakes](./media/image10.jpeg)
+
+*Figure 9: Pancake Airbrakes.*
 
 ### Flaps 
 
@@ -38,9 +39,9 @@ out of the airframe to deploy the flaps. The flaps can be made of either
 aluminum or carbon fiber. Figure 10 provides an example of a flap-style
 airbrake system.
 
-![A metal cylinder with metal rods Description automatically generated
-with medium
-confidence](./media/image11.png)
+![Flap-style airbrakes](./media/image11.png)
+
+*Figure 10: Flap Airbrakes.*
 
 ### Doppler Hole
 
@@ -54,8 +55,9 @@ control system. Critical factors involved in this design are the size,
 shape, and placement of the holes. Figure 11 depicts a conceptual model
 of the doppler hole airbrake system.
 
-![A close up of a black and white object Description automatically
-generated](./media/image12.png)
+![Conceptual model of a body tube with drag holes](./media/image12.png)
+
+*Figure 11: Conceptual model of the Doppler hole airbrake system.*
 
 ### Origami Flashers
 
@@ -69,8 +71,9 @@ The geometric pattern must be carefully optimized to achieve the desired
 aerodynamic performance that meets the project requirements. An example
 of the origami flasher concept is provided in Figure 12.
 
-![Jcs 05 00147 g014
-550](./media/image13.jpeg)
+![Origami flasher pattern folded and deployed](./media/image13.jpeg)
+
+*Figure 12: Origami flasher concept.*
 
 ## Mechanical Concept Evaluation 
 

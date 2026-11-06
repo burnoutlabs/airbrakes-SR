@@ -27,9 +27,10 @@ issue can be easily solved with the use of a single printer, however
 since the prototype phase was condensed from the design change multiple
 printers were needed to allow for sufficient part down-time.
 
-![A computer generated image of a machine Description automatically
-generated with medium
-confidence](./media/image33.png)
+![Prototype parts laid out for 3D printing](./media/image33.png)
+
+*3D-printed prototype parts.*
+
 One significant hurdle faced in the assembly of the prototype was the
 integration between the electrical and mechanical systems. Originally
 the top plate had no mounting surfaces for any electronics, including
@@ -62,7 +63,10 @@ refers to this as the ESLOV connector in their internal documentation
 and allows devices to be connected and act as host and client devices as
 seen in Figure 30.
 
-![](./media/image35.svg)
+![Portenta H7 and Nicla Sense ME connected over ESLOV](./media/image35.svg)
+
+*Figure 30: Host and client connection over the ESLOV connector.*
+
 The remainder of the prototyping for the motor circuit and system
 sensors consisted of the connection of the various components according
 to the given schematic. Header pin connections were used for modules
@@ -73,7 +77,9 @@ view of the mounted electrical prototype is shown in Figure 31, any
 manufacturer-provided cables have been kept unaltered at full length to
 preserve them until final wiring at the time of integration.
 
-![](./media/image36.jpeg)
+![Top view of the mounted electrical prototype](./media/image36.jpeg)
+
+*Figure 31: Top view of the mounted electrical prototype.*
 
 ## Software Prototype Development
 
