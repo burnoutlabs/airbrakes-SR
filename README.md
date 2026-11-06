@@ -36,3 +36,6 @@ This is the repository for the Western Engineering Rocketry Team's design of an 
 | SRAD    | Student researched and designed           |                                                                                      |
 | VLA     | Vertical Launch Area                      |                                                                                      |
 | WERT    | Western Engineering Rocketry Team         | Also called WE Rocketry                                                              |
+## License
+
+None yet. This is joint team work, so a license needs the co-authors' agreement; that is tracked in [#4](https://github.com/burnoutlabs/airbrakes-SR/issues/4).
