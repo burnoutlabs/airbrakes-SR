@@ -22,8 +22,9 @@ of the pancake style airbrakes used in École Polytechnique Fédérale de
 Lausanne's rocket design that competed in the Spaceport America Cup in
 2018. 
 
-![No photo description
-available.](./media/image10.jpeg)
+![Pancake-style airbrakes](./media/image10.jpeg)
+
+*Figure 9: Pancake Airbrakes.*
 
 ### Flaps 
 
@@ -38,9 +39,9 @@ out of the airframe to deploy the flaps. The flaps can be made of either
 aluminum or carbon fiber. Figure 10 provides an example of a flap-style
 airbrake system.
 
-![A metal cylinder with metal rods Description automatically generated
-with medium
-confidence](./media/image11.png)
+![Flap-style airbrakes](./media/image11.png)
+
+*Figure 10: Flap Airbrakes.*
 
 ### Doppler Hole
 
@@ -54,8 +55,9 @@ control system. Critical factors involved in this design are the size,
 shape, and placement of the holes. Figure 11 depicts a conceptual model
 of the doppler hole airbrake system.
 
-![A close up of a black and white object Description automatically
-generated](./media/image12.png)
+![Conceptual model of a body tube with drag holes](./media/image12.png)
+
+*Figure 11: Conceptual model of the Doppler hole airbrake system.*
 
 ### Origami Flashers
 
@@ -69,8 +71,9 @@ The geometric pattern must be carefully optimized to achieve the desired
 aerodynamic performance that meets the project requirements. An example
 of the origami flasher concept is provided in Figure 12.
 
-![Jcs 05 00147 g014
-550](./media/image13.jpeg)
+![Origami flasher pattern folded and deployed](./media/image13.jpeg)
+
+*Figure 12: Origami flasher concept.*
 
 ## Mechanical Concept Evaluation 
 
@@ -112,13 +115,21 @@ then developed to assess each concept. The specific criteria included:
 16. Auto-Closing
 
 Using the above criteria, a House of Quality (HOQ) and Pugh Matrix were
-constructed to compare each concept. The HOQ and Pugh Matrix can be
-found in Appendix I. In both methods, the concept that scored the
+constructed to compare each concept. Both are shown below. In both
+methods, the concept that scored the
 highest was the flap style airbrakes. The flap style airbrakes system
 triumphed compared to other designs for its high durability, redundancy,
 ease of manufacturability, and easy repairability. The flap style design
 also has flight heritage and a high TRL, unlike the Doppler hole and
 origami flashers concepts, which have both never been flown before.
+
+![House of Quality for the mechanical concepts](./media/image39.png)
+
+*House of Quality (QFD) for the mechanical concept evaluation.*
+
+![Pugh matrix for the mechanical concepts](./media/image40.png)
+
+*Pugh matrix for the mechanical concept evaluation.*
 
 At the concept selection phase, the airbrakes design consisted of four
 flaps. Four flaps in the design meant that a critical safety feature

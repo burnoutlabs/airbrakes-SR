@@ -113,8 +113,12 @@ real-time control during flight. This methodology allowed for the
 offline computation of control policy, reducing the computational load
 during the flight \[6\].
 
-![A close-up of a mechanical device Description automatically
-generated](./media/image2.png)
+![Rocket with the airbrakes section highlighted](./media/image2.png)
+
+*Figure 1: Rocket with airbrakes: surfaces controlled by a servomotor
+which can increase the longitudinal drag forces. The airbrakes are
+located behind the center of pressure to guarantee stability.*
+
 Another team aiming for precise apogee targeting in the Spaceport
 America Cup used a SRAD rocket simulator along with a discrete PI
 controller. Their airbrake design was positioned above the motor and
@@ -131,20 +135,30 @@ on-board microcontroller. They also conducted Computational Fluid
 Dynamics (CFD) and Finite Element (FE) analysis for flow physics and
 structural integrity \[8\].
 
-![A diagram of a robot Description automatically
-generated](./media/image3.png)
-![A diagram of a robot Description automatically
-generated](./media/image4.png)
+![ARAC model closed and at maximum extension](./media/image3.png)
+
+*Figure 2: ARAC model in fully closed state (left), Isometric view of
+ARAC model in max extension state (right).*
+
+![Underside of the ARAC system near maximum extension](./media/image4.png)
+
+*Figure 3: Underside view of ARAC system near max extension; linkage
+mechanism identified.*
+
 Project EULER by ARIS Space in 2020 targeted a higher apogee of 30,000
 feet. The project faced challenges with radial forces affecting
 actuation and had to iterate their airbrake design. Despite a parachute
 failure that led to rocket destruction, telemetry and accelerometer data
 confirmed successful airbrake deployment \[9\]. 
 
-![A close up of a pen Description automatically
-generated](./media/image5.png)
-![A heat map of a pipe Description automatically generated with medium
-confidence](./media/image6.png)
+![CFD pressure field around the full EULER rocket](./media/image5.png)
+
+*Figure 4: EULER full-body CFD: pressure at Ma 1.2.*
+
+![CFD of the flow around the EULER fins](./media/image6.png)
+
+*Figure 5: EULER full-body CFD: fin interaction.*
+
 ThrustMIT focused on designing a low-cost airbrake system. They employed
 a 4th-order Runge-Kutta method for real-time apogee prediction and used
 a Teensy 4.1 microcontroller for high computational power. The airbrakes
@@ -152,8 +166,10 @@ were made of aluminum and designed to withstand high forces. Safety
 measures included a virtual floor of 5000ft to prevent unwanted
 deployment \[10\]. 
 
-![A collage of images of a mechanical device Description automatically
-generated](./media/image7.png)
+![ThrustMIT airbrakes stowed and deployed](./media/image7.png)
+
+*Figure 6: The ThrustMIT Airbrake system in both the stowed and deployed
+positions.*
 
 Another paper by ThrustMIT presents an optimization method for the
 Runge-Kutta 4th Order Method used as part of the control scheme. This
@@ -177,8 +193,11 @@ barometer readings for high velocities \[12\]. This bias could be
 attributed to the requirement for properly sized and tested pressure
 ports \[13\], \[14\].
 
-![A close-up of a circular object Description automatically
-generated](./media/image8.png)
+![ARIS 2018 airbrakes CAD, retracted and deployed](./media/image8.png)
+
+*Figure 7: The retracted (left) and deployed (right) CAD renderings of
+the airbrakes mechanism used by ARIS in 2018.*
+
 In 2018 the University of Ottawa Student Team of Aeronautics and
 Rocketry employed flaps perpendicular to the roll axis to compensate for
 the intentional overshooting. The system employs Model Predictive
@@ -190,9 +209,12 @@ angle of the air brakes, calculated using a drag model derived from CFD
 simulations. Commands are then relayed to actuate the servo motor
 controlling the air brakes.
 
-![A diagram of an orange scheme Description automatically generated with
-medium
-confidence](./media/image9.png)
+![Avionics control block diagram](./media/image9.png)
+
+*Figure 8: Diagrammatic visual of Avionics Control Schematic from the
+University of Ottawa Student Team of Aeronautics and Rocketry airbrakes
+in 2018.*
+
 An MPC-based approach is desirable as it allows for dynamic correction
 of trajectory errors using an adaptive and nonlinear control schema
 based on the system model \[15\], making it highly effective in

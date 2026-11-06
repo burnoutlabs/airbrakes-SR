@@ -9,7 +9,7 @@
 
 #include <Encoder.h>
 #include <PID_v1.h>
-#include "DCMotorServo.h" // from https://github.com/CameronBrooks11/DCMotorServo
+#include "DCMotorServo.h" // from https://github.com/feastorg/dcmotorservo
 
 #define pin_dcmoto_encode1 0
 #define pin_dcmoto_encode2 1

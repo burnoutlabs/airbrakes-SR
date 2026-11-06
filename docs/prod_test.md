@@ -16,7 +16,7 @@ containing the airbrakes is equal to the force required to accelerate
 the mass at and above the airbrakes system with the maximum acceleration
 that the rocket will experience (which occurs during its motor burn when
 the airbrakes are not deployed, specifically at the moment when the
-motor hits its peak thrust of 2938 N). As reported in Section 11.4.5,
+motor hits its peak thrust of 2938 N). As reported in [Summary and Comparisons](detailed_design.md#summary-and-comparisons),
 the maximum acceleration is projected to be 13.58 g. The mass at and
 above the airbrakes system is 11.63 kg. The total thrust transferred
 through the airbrakes to the upper portion of the rocket is the mass
@@ -30,8 +30,9 @@ determine if the section of body tube on the final rocket with holes cut
 in it for the flaps to go through would be able to withstand the loads
 it will experience at the moment of maximum thrust transfer.
 
-![A close up of a machine Description automatically
-generated](./media/image37.png)
+![Body tube with flap cutouts in the compression tester](./media/image37.png)
+
+*Figure 32: Compression test of the body tube with flap cutouts.*
 
 There was a marked (though not unexpected) difference in the strength of
 the tube with the cutouts compared to the tubes without the cutouts. The
@@ -91,5 +92,6 @@ loads they would see during flight. The mechanical assembly successfully
 supported the maximum expected flight loads, as can be seen in Figure
 35:
 
-![No description
-available.](./media/image38.jpeg)
+![Airbrakes assembly with the flaps loaded](./media/image38.jpeg)
+
+*Figure 35: Loaded test of the mechanical assembly.*

@@ -70,9 +70,10 @@ deliverables of the capstone course, and as such provide a summary of
 all the work done on this project up until the due date of the report.
 It should be noted at the outset that the airbrakes project does not end
 with the conclusion of the capstone course. Further work needs to be
-done before the competition in June, and forward-looking remarks for
-this project are included in Section 14: Recommendations, Future Design
-Directions.
+done before the competition in June. The report's recommendations and
+future design directions are tracked as future-work issues
+([#15](https://github.com/burnoutlabs/airbrakes-SR/issues/15) to [#21](https://github.com/burnoutlabs/airbrakes-SR/issues/21)); what happened
+afterwards is in [Project Status](status.md).
 
 # Problem Definition
 
@@ -83,8 +84,8 @@ assembly that extends outwards from the body of a rocket or aircraft
 during flight to induce drag to decelerate the rocket or aircraft. There
 are different ways of implement aerobraking on a rocket -- the two most
 common of which are flap-style and pancake-style systems, which will be
-discussed in more detail in Section 9: State-of-the-Art and Emerging
-Technologies and Section 10: Concept Generation and Evaluation -- but
+discussed in more detail in the [Literature Review](lit_review.md) and
+[Conceptual Design](concept_design.md) -- but
 the main principles stay the same regardless of the mechanism (by
 extending a control surface into the freestream flow to induce drag).
 

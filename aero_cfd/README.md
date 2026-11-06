@@ -1,4 +1,15 @@
-# Aerdynamics & CFD Directory
+# Aerodynamics & CFD Directory
+
+## Contents
+
+This directory holds documentation only:
+
+- this README, with the CFD approach and future work;
+- [`wind_tunnel/wind_tunnel_plan.md`](wind_tunnel/wind_tunnel_plan.md), the plan for a drag characterisation test in the Boundary Layer Wind Tunnel (BLWT 2). Its mount design is still `TODO`, and there is no record that the test ran ([#20](https://github.com/burnoutlabs/airbrakes-SR/issues/20)).
+
+There are no CFD files here. The Ansys Fluent models and results behind [docs/detailed_design.md](../docs/detailed_design.md) (Computational Fluid Dynamics) are not in the repository; their import is tracked in [#12](https://github.com/burnoutlabs/airbrakes-SR/issues/12) and [#13](https://github.com/burnoutlabs/airbrakes-SR/issues/13).
+
+## Approach
 
 For the purposes of the Capstone deliverables, Ansys Fluent was used for CFD because it was readily available to students. However, some preliminary
 research suggests that an alternative software, OpenFOAM, may be more

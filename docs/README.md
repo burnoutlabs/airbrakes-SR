@@ -1,6 +1,6 @@
 # Welcome to the airbrakes-SR Docs
 
-This project uses [chasgior214/RocketFlightSim](https://github.com/chasgior214/RocketFlightSim) and [werocketry/HPR-Rocket-Flight-Computer](https://github.com/werocketry/HPR-Rocket-Flight-Computer), so please familiarize yourself with them before getting started. Although both of those projects were developed in tandem with this one, they were forked off since they are both broadly applicable to amateur rocketry beyond just the airbrakes subsystem. The RocketFlightSim is utilized and referenced throughout the project documentation and the HPR-RFC is used as a component within the detailed design. 
+This project uses [werocketry/RocketFlightSim](https://github.com/werocketry/RocketFlightSim) and [burnoutlabs/HPR-Rocket-Flight-Computer](https://github.com/burnoutlabs/HPR-Rocket-Flight-Computer), so please familiarize yourself with them before getting started. Although both of those projects were developed in tandem with this one, they were forked off since they are both broadly applicable to amateur rocketry beyond just the airbrakes subsystem. The RocketFlightSim is utilized and referenced throughout the project documentation and the HPR-RFC is used as a component within the detailed design. 
 
 ## Table of Contents
 1. [Introduction](intro.md)
@@ -11,3 +11,5 @@ This project uses [chasgior214/RocketFlightSim](https://github.com/chasgior214/R
 6. [Production Planning](plan_prod.md)
 7. [Production & Testing](prod_test.md)
 8. [Acknowledgements](acknowledgements.md)
+9. [Project Status](status.md)
+10. [Competition Notes (SAC 2023)](giorgio_comp_notes.md)
