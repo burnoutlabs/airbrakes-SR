@@ -1,2 +1,8 @@
 __pycache__/
 venv/
+# KiCad editor leftovers
+*-backups/
+_autosave-*
+*.bak
+fp-info-cache
+*.kicad_prl
