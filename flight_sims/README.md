@@ -34,6 +34,8 @@ Anything still worth doing belongs in one of those repositories. The
 | `configs.py:330-332` | Confirm flap Cd and the deployment and retraction rates after loaded testing | Superseded; the loaded-test stall is tracked in [#16](https://github.com/burnoutlabs/airbrakes-SR/issues/16) |
 | `visualizations_cleaned.ipynb`, cell 6 | Non-simulation dataset path needs updating | Superseded |
 
-The barometric lag explanation in the notes above is still unchecked
-against the flight logs; that check is tracked separately in
-[#21](https://github.com/burnoutlabs/airbrakes-SR/issues/21).
+The barometric lag explanation in the notes above has been checked against
+the flight logs in
+[`Prometheus_flight_data/baro_lag_check.md`](Prometheus_flight_data/baro_lag_check.md).
+The barometer does read about 360 m (1180 ft) low at burnout on the 2022
+flight, but the logs do not fit a 0.8 s delay; the mechanism is unresolved.
