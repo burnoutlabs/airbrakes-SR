@@ -5,25 +5,28 @@ test photos and videos (MOV, HEIC) and archives (ZIP) to Git LFS, matching
 their extensions case-insensitively. The patterns apply to files added or
 changed **from now on**.
 
-Files committed before the patterns covered them were **not** converted.
-They stay ordinary Git blobs, so `git lfs fsck --pointers` reports them and
-`git status` may list them as modified even though their contents equal the
-committed version. Converting them forward (`git add --renormalize`) and
-rewriting history (`git lfs migrate import`) were both deferred by the owner
-on 2026-11-05. If either is done later, this list is the scope.
+Files committed before the patterns covered them were stored as ordinary
+Git blobs. The owner approved converting them forward on 2026-11-07:
+`git add --renormalize .` re-stored every one still in the tree as an LFS
+pointer (5 in #27, the remaining 59 in the commit that added this
+paragraph), so `git lfs fsck --pointers` is clean and file contents are
+unchanged. History was **not** rewritten (`git lfs migrate import` stays
+deferred), so commits before the conversion still hold these files as
+blobs and `.git` does not shrink. If history is rewritten later, the list
+below is the scope.
 
 Listed at commit `99d8a5c`. Sizes are the committed blob sizes.
 
-## Matching files stored as plain blobs (102 files, 377.3 MB)
+## Files with plain-blob history (102 files, 377.3 MB)
 
 ### KiCad backup zips (38 files, 7.4 MB)
 
 All `*.zip` under `electrical/dmats_hw_v1_0/dmats_hw_v1_0-backups/` and
-`electrical/dmats_hw_v2_0/dmats_hw_v2_0-backups/`. They are removed by the
-KiCad cleanup ([#5](https://github.com/burnoutlabs/airbrakes-SR/issues/5)),
-after which they drop off this list.
+`electrical/dmats_hw_v2_0/dmats_hw_v2_0-backups/`. They were removed by the
+KiCad cleanup ([#5](https://github.com/burnoutlabs/airbrakes-SR/issues/5))
+and are no longer in the tree; their blobs remain in history.
 
-### Other files (64 files, 369.9 MB)
+### Other files (64 files, 369.9 MB, now LFS pointers)
 
 | Size | Path |
 | --- | --- |

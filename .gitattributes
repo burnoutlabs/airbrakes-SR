@@ -1,8 +1,9 @@
 # Git LFS. Patterns are written case-insensitively because Git matches
 # attribute patterns case-sensitively on Linux, and SolidWorks and some STEP
 # exporters write upper-case extensions (.SLDPRT, .STEP).
-# Files committed before these patterns existed stay plain blobs; see
-# docs/lfs-exceptions.md.
+# Files committed before these patterns existed were converted forward with
+# `git add --renormalize`; their old blobs remain in history (see
+# docs/lfs-exceptions.md).
 *.[sS][tT][pP] filter=lfs diff=lfs merge=lfs -text
 *.[sS][tT][eE][pP] filter=lfs diff=lfs merge=lfs -text
 *.[sS][tT][lL] filter=lfs diff=lfs merge=lfs -text
